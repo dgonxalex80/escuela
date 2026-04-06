@@ -10,3 +10,7 @@ format:
     theme: none
     css: styles.css
     toc: false
+    include-in-header:
+      text: |
+        <link rel="icon" type="image/jpeg" href="img/escuela">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/escuela">
