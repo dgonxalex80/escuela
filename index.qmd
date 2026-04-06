@@ -1,0 +1,94 @@
+---
+title: "Cursos publicados"
+page-layout: full
+---
+
+::: {.hero}
+::: {.eyebrow}
+GitHub Pages
+:::
+
+Materiales publicados y organizados en una pagina simple.
+:::
+
+::: {.courses-grid}
+::: {.course-card}
+### [Cancionero](https://dgonxalex80.github.io/cancionero/)
+Recurso publicado para el curso de cancionero.
+:::
+
+::: {.course-card}
+### [Carro](https://dgonxalex80.github.io/carro/)
+Recurso publicado para el curso de carro.
+:::
+
+::: {.course-card}
+### [Cocina](https://dgonxalex80.github.io/cocina/)
+Recurso publicado para el curso de cocina.
+:::
+
+::: {.course-card}
+### [DaVinci](https://dgonxalex80.github.io/davinci/)
+Recurso publicado para el curso de DaVinci.
+:::
+
+::: {.course-card}
+### [Docker](https://dgonxalex80.github.io/docker/)
+Recurso publicado para el curso de Docker.
+:::
+
+::: {.course-card}
+### [GitHub](https://dgonxalex80.github.io/github/)
+Recurso publicado para el curso de GitHub.
+:::
+
+::: {.course-card}
+### [MMM](https://dgonxalex80.github.io/mmm/)
+Recurso publicado para el curso de MMM.
+:::
+
+::: {.course-card}
+### [OBS](https://dgonxalex80.github.io/obs/)
+Recurso publicado para el curso de OBS.
+:::
+
+::: {.course-card}
+### [Ollama](https://dgonxalex80.github.io/ollama/)
+Recurso publicado para el curso de Ollama.
+:::
+
+::: {.course-card}
+### [Positron](https://dgonxalex80.github.io/positron/)
+Recurso publicado para el curso de Positron.
+:::
+
+::: {.course-card}
+### [Python](https://dgonxalex80.github.io/python/)
+Recurso publicado para el curso de Python.
+:::
+
+::: {.course-card}
+### [Quarto](https://dgonxalex80.github.io/quarto/)
+Recurso publicado para el curso de Quarto.
+:::
+
+::: {.course-card}
+### [RStudio](https://dgonxalex80.github.io/rstudio/)
+Recurso publicado para el curso de RStudio.
+:::
+
+::: {.course-card}
+### [Servidor](https://dgonxalex80.github.io/servidor/)
+Recurso publicado para el curso de servidor.
+:::
+
+::: {.course-card}
+### [Ubuntu](https://dgonxalex80.github.io/ubuntu/)
+Recurso publicado para el curso de Ubuntu.
+:::
+
+::: {.course-card}
+### [VS Code](https://dgonxalex80.github.io/vscode/)
+Recurso publicado para el curso de VS Code.
+:::
+:::

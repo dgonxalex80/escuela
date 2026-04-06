@@ -1,0 +1,12 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Cursos"
+
+format:
+  html:
+    theme: none
+    css: styles.css
+    toc: false
