@@ -1,15 +1,6 @@
 ---
 title: "Cursos publicados"
 page-layout: article
-listing:
-  contents: cursos
-  type: grid
-  sort: "title"
-  fields: [title]
-  categories: false
-  feed: false
-  sort-ui: false
-  filter-ui: false
 ---
 
 ::: {.hero}
@@ -21,3 +12,81 @@ Materiales publicados y organizados en una pagina simple.
 :::
 
 ## Cursos
+
+::: {.course-grid}
+::: {.course-card}
+[Agentes](https://dgonxalex80.github.io/agentes/)
+:::
+::: {.course-card}
+[Arquitectura](https://dgonxalex80.github.io/arquitectura/)
+:::
+::: {.course-card}
+[Backend](https://dgonxalex80.github.io/backend/)
+:::
+::: {.course-card}
+[Camino](https://dgonxalex80.github.io/camino/)
+:::
+::: {.course-card}
+[Cancionero](https://dgonxalex80.github.io/cancionero/)
+:::
+::: {.course-card}
+[Carro](https://dgonxalex80.github.io/carro/)
+:::
+::: {.course-card}
+[Cocina](https://dgonxalex80.github.io/cocina/)
+:::
+::: {.course-card}
+[Computacion](https://dgonxalex80.github.io/computacion/)
+:::
+::: {.course-card}
+[DaVinci](https://dgonxalex80.github.io/davinci/)
+:::
+::: {.course-card}
+[Docker](https://dgonxalex80.github.io/docker/)
+:::
+::: {.course-card}
+[FIFA 2026](https://dgonxalex80.github.io/fifa2026/)
+:::
+::: {.course-card}
+[GitHub](https://dgonxalex80.github.io/github/)
+:::
+::: {.course-card}
+[Linux](https://dgonxalex80.github.io/linux/)
+:::
+::: {.course-card}
+[LWMMM](https://dgonxalex80.github.io/LWMMM/)
+:::
+::: {.course-card}
+[MMM](https://dgonxalex80.github.io/mmm/)
+:::
+::: {.course-card}
+[OBS](https://dgonxalex80.github.io/obs/)
+:::
+::: {.course-card}
+[Ollama](https://dgonxalex80.github.io/ollama/)
+:::
+::: {.course-card}
+[Positron](https://dgonxalex80.github.io/positron/)
+:::
+::: {.course-card}
+[Python](https://dgonxalex80.github.io/python/)
+:::
+::: {.course-card}
+[Quarto](https://dgonxalex80.github.io/quarto/)
+:::
+::: {.course-card}
+[RStudio](https://dgonxalex80.github.io/rstudio/)
+:::
+::: {.course-card}
+[Salud](https://dgonxalex80.github.io/salud/)
+:::
+::: {.course-card}
+[Servidor](https://dgonxalex80.github.io/servidor/)
+:::
+::: {.course-card}
+[Ubuntu](https://dgonxalex80.github.io/ubuntu/)
+:::
+::: {.course-card}
+[VSCode](https://dgonxalex80.github.io/vscode/)
+:::
+:::

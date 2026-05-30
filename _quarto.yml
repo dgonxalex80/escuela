@@ -12,31 +12,56 @@ website:
         href: index.qmd
       - section: "Cursos"
         contents:
-          - cursos/agentes.qmd
-          - cursos/arquitectura.qmd
-          - cursos/backend.qmd
-          - cursos/camino.qmd
-          - cursos/cancionero.qmd
-          - cursos/carro.qmd
-          - cursos/cocina.qmd
-          - cursos/computacion.qmd
-          - cursos/davinci.qmd
-          - cursos/docker.qmd
-          - cursos/fifa2026.qmd
-          - cursos/github.qmd
-          - cursos/linux.qmd
-          - cursos/LWMMM.qmd
-          - cursos/mmm.qmd
-          - cursos/obs.qmd
-          - cursos/ollama.qmd
-          - cursos/positron.qmd
-          - cursos/python.qmd
-          - cursos/quarto.qmd
-          - cursos/rstudio.qmd
-          - cursos/salud.qmd
-          - cursos/servidor.qmd
-          - cursos/ubuntu.qmd
-          - cursos/vscode.qmd
+          - text: "Agentes"
+            href: https://dgonxalex80.github.io/agentes/
+          - text: "Arquitectura"
+            href: https://dgonxalex80.github.io/arquitectura/
+          - text: "Backend"
+            href: https://dgonxalex80.github.io/backend/
+          - text: "Camino"
+            href: https://dgonxalex80.github.io/camino/
+          - text: "Cancionero"
+            href: https://dgonxalex80.github.io/cancionero/
+          - text: "Carro"
+            href: https://dgonxalex80.github.io/carro/
+          - text: "Cocina"
+            href: https://dgonxalex80.github.io/cocina/
+          - text: "Computacion"
+            href: https://dgonxalex80.github.io/computacion/
+          - text: "DaVinci"
+            href: https://dgonxalex80.github.io/davinci/
+          - text: "Docker"
+            href: https://dgonxalex80.github.io/docker/
+          - text: "FIFA 2026"
+            href: https://dgonxalex80.github.io/fifa2026/
+          - text: "GitHub"
+            href: https://dgonxalex80.github.io/github/
+          - text: "Linux"
+            href: https://dgonxalex80.github.io/linux/
+          - text: "LWMMM"
+            href: https://dgonxalex80.github.io/LWMMM/
+          - text: "MMM"
+            href: https://dgonxalex80.github.io/mmm/
+          - text: "OBS"
+            href: https://dgonxalex80.github.io/obs/
+          - text: "Ollama"
+            href: https://dgonxalex80.github.io/ollama/
+          - text: "Positron"
+            href: https://dgonxalex80.github.io/positron/
+          - text: "Python"
+            href: https://dgonxalex80.github.io/python/
+          - text: "Quarto"
+            href: https://dgonxalex80.github.io/quarto/
+          - text: "RStudio"
+            href: https://dgonxalex80.github.io/rstudio/
+          - text: "Salud"
+            href: https://dgonxalex80.github.io/salud/
+          - text: "Servidor"
+            href: https://dgonxalex80.github.io/servidor/
+          - text: "Ubuntu"
+            href: https://dgonxalex80.github.io/ubuntu/
+          - text: "VSCode"
+            href: https://dgonxalex80.github.io/vscode/
 
 format:
   html:

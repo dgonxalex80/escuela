@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,68 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 18,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="icon" type="image/jpeg" href="img/escuela">
 <link rel="apple-touch-icon" sizes="180x180" href="img/escuela">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -187,152 +126,152 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/agentes.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/agentes/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Agentes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/arquitectura.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/arquitectura/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arquitectura</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/backend.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/backend/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Backend</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/camino.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/camino/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Camino</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/cancionero.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/cancionero/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cancionero</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/carro.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/carro/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Carro</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/cocina.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/cocina/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cocina</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/computacion.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/computacion/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Computacion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/davinci.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/davinci/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">DaVinci</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/docker.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/docker/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Docker</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/fifa2026.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/fifa2026/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FIFA 2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/github.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/github/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/linux.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/linux/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Linux</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/LWMMM.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/LWMMM/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">LWMMM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/mmm.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/mmm/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MMM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/obs.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/obs/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">OBS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/ollama.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/ollama/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ollama</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/positron.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/positron/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Positron</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/python.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/python/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/quarto.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/quarto/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quarto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/rstudio.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/rstudio/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/salud.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/salud/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Salud</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/servidor.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/servidor/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Servidor</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/ubuntu.html" class="sidebar-item-text sidebar-link">
+  <a href="https://dgonxalex80.github.io/ubuntu/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ubuntu</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursos/vscode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">VS Code</span></a>
+  <a href="https://dgonxalex80.github.io/vscode/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VSCode</span></a>
   </div>
 </li>
       </ul>
@@ -381,269 +320,88 @@ window.Quarto = {
 </div>
 <section id="cursos" class="level2">
 <h2 class="anchored" data-anchor-id="cursos">Cursos</h2>
-
+<div class="course-grid">
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/agentes/">Agentes</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/arquitectura/">Arquitectura</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/backend/">Backend</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/camino/">Camino</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/cancionero/">Cancionero</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/carro/">Carro</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/cocina/">Cocina</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/computacion/">Computacion</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/davinci/">DaVinci</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/docker/">Docker</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/fifa2026/">FIFA 2026</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/github/">GitHub</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/linux/">Linux</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/LWMMM/">LWMMM</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/mmm/">MMM</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/obs/">OBS</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/ollama/">Ollama</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/positron/">Positron</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/python/">Python</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/quarto/">Quarto</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/rstudio/">RStudio</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/salud/">Salud</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/servidor/">Servidor</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/ubuntu/">Ubuntu</a></p>
+</div>
+<div class="course-card">
+<p><a href="https://dgonxalex80.github.io/vscode/">VSCode</a></p>
+</div>
+</div>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1780180682997" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/agentes.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Agentes
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1780180682997" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/arquitectura.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Arquitectura
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1780180682997" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/backend.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Backend
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1775940411049" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/camino.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Camino
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1775940411051" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/cancionero.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Cancionero
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1775940411052" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/carro.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Carro
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1775940411054" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/cocina.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Cocina
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1780180682997" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/computacion.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Computacion
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1775940411055" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/davinci.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-DaVinci
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1775940411057" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/docker.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Docker
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1780180682997" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/fifa2026.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-FIFA 2026
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-listing-file-modified-sort="1775940411059" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/github.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-GitHub
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="12" data-listing-file-modified-sort="1780180682997" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/LWMMM.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-LWMMM
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="13" data-listing-file-modified-sort="1780180682997" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/linux.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Linux
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="14" data-listing-file-modified-sort="1775940411061" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/mmm.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-MMM
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="15" data-listing-file-modified-sort="1775940411062" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/obs.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-OBS
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="16" data-listing-file-modified-sort="1775940411064" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/ollama.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ollama
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="17" data-listing-file-modified-sort="1775940411066" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/positron.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Positron
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="18" data-listing-file-modified-sort="1775940411067" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/python.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Python
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="19" data-listing-file-modified-sort="1775940411069" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/quarto.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Quarto
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="20" data-listing-file-modified-sort="1775940411070" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/rstudio.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-RStudio
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="21" data-listing-file-modified-sort="1780180682998" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/salud.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Salud
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="22" data-listing-file-modified-sort="1775940411072" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/servidor.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Servidor
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="23" data-listing-file-modified-sort="1775940411074" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/ubuntu.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ubuntu
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="24" data-listing-file-modified-sort="1775940411075" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="./cursos/vscode.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-VS Code
-</h5>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

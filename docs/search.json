@@ -4,143 +4,91 @@
     "href": "cursos/ollama.html",
     "title": "Ollama",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Ollama"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/cocina.html",
     "href": "cursos/cocina.html",
     "title": "Cocina",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Cocina"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/arquitectura.html",
     "href": "cursos/arquitectura.html",
     "title": "Arquitectura",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Arquitectura"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/linux.html",
     "href": "cursos/linux.html",
     "title": "Linux",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Linux"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/backend.html",
     "href": "cursos/backend.html",
     "title": "Backend",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Backend"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/carro.html",
     "href": "cursos/carro.html",
     "title": "Carro",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Carro"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/agentes.html",
     "href": "cursos/agentes.html",
     "title": "Agentes",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Agentes"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/mmm.html",
     "href": "cursos/mmm.html",
     "title": "MMM",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "MMM"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/camino.html",
     "href": "cursos/camino.html",
     "title": "Camino",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Camino"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/obs.html",
     "href": "cursos/obs.html",
     "title": "OBS",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "OBS"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/fifa2026.html",
     "href": "cursos/fifa2026.html",
     "title": "FIFA 2026",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "FIFA 2026"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/rstudio.html",
     "href": "cursos/rstudio.html",
     "title": "RStudio",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "RStudio"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/cancionero.html",
     "href": "cursos/cancionero.html",
     "title": "Cancionero",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Cancionero"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "index.html",
@@ -157,7 +105,7 @@
     "href": "index.html#cursos",
     "title": "Cursos publicados",
     "section": "Cursos",
-    "text": "Cursos",
+    "text": "Cursos\n\n\nAgentes\n\n\nArquitectura\n\n\nBackend\n\n\nCamino\n\n\nCancionero\n\n\nCarro\n\n\nCocina\n\n\nComputacion\n\n\nDaVinci\n\n\nDocker\n\n\nFIFA 2026\n\n\nGitHub\n\n\nLinux\n\n\nLWMMM\n\n\nMMM\n\n\nOBS\n\n\nOllama\n\n\nPositron\n\n\nPython\n\n\nQuarto\n\n\nRStudio\n\n\nSalud\n\n\nServidor\n\n\nUbuntu\n\n\nVSCode",
     "crumbs": [
       "Inicio"
     ]
@@ -167,131 +115,83 @@
     "href": "cursos/LWMMM.html",
     "title": "LWMMM",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "LWMMM"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/positron.html",
     "href": "cursos/positron.html",
     "title": "Positron",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Positron"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/ubuntu.html",
     "href": "cursos/ubuntu.html",
     "title": "Ubuntu",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Ubuntu"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/quarto.html",
     "href": "cursos/quarto.html",
     "title": "Quarto",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Quarto"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/davinci.html",
     "href": "cursos/davinci.html",
     "title": "DaVinci",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "DaVinci"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/salud.html",
     "href": "cursos/salud.html",
     "title": "Salud",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Salud"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/vscode.html",
     "href": "cursos/vscode.html",
     "title": "VS Code",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "VS Code"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/python.html",
     "href": "cursos/python.html",
     "title": "Python",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Python"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/computacion.html",
     "href": "cursos/computacion.html",
     "title": "Computacion",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Computacion"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/servidor.html",
     "href": "cursos/servidor.html",
     "title": "Servidor",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Servidor"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/docker.html",
     "href": "cursos/docker.html",
     "title": "Docker",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "Docker"
-    ]
+    "text": "Ir al curso"
   },
   {
     "objectID": "cursos/github.html",
     "href": "cursos/github.html",
     "title": "GitHub",
     "section": "",
-    "text": "Ir al curso",
-    "crumbs": [
-      "Cursos",
-      "GitHub"
-    ]
+    "text": "Ir al curso"
   }
 ]
