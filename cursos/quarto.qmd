@@ -1,0 +1,6 @@
+---
+title: "Quarto"
+description: "Recurso publicado para el curso de Quarto - generador de documentos."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/quarto/)

@@ -4,12 +4,46 @@ project:
 
 website:
   title: "Cursos"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Inicio"
+        href: index.qmd
+      - section: "Cursos"
+        contents:
+          - cursos/agentes.qmd
+          - cursos/arquitectura.qmd
+          - cursos/backend.qmd
+          - cursos/camino.qmd
+          - cursos/cancionero.qmd
+          - cursos/carro.qmd
+          - cursos/cocina.qmd
+          - cursos/computacion.qmd
+          - cursos/davinci.qmd
+          - cursos/docker.qmd
+          - cursos/fifa2026.qmd
+          - cursos/github.qmd
+          - cursos/linux.qmd
+          - cursos/LWMMM.qmd
+          - cursos/mmm.qmd
+          - cursos/obs.qmd
+          - cursos/ollama.qmd
+          - cursos/positron.qmd
+          - cursos/python.qmd
+          - cursos/quarto.qmd
+          - cursos/rstudio.qmd
+          - cursos/salud.qmd
+          - cursos/servidor.qmd
+          - cursos/ubuntu.qmd
+          - cursos/vscode.qmd
 
 format:
   html:
-    theme: none
+    theme: cosmo
     css: styles.css
-    toc: false
+    toc: true
+    toc-location: right
     include-in-header:
       text: |
         <link rel="icon" type="image/jpeg" href="img/escuela">

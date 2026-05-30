@@ -1,0 +1,6 @@
+---
+title: "MMM"
+description: "Recurso publicado para el curso de MMM - modelacion."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/mmm/)

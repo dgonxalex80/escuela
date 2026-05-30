@@ -1,0 +1,6 @@
+---
+title: "GitHub"
+description: "Recurso publicado para el curso de GitHub - gestor de control de versiones."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/github/)

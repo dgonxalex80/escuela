@@ -1,0 +1,6 @@
+---
+title: "Positron"
+description: "Recurso publicado para el curso de Positron - DEI para R y Python."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/positron/)

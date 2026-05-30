@@ -1,0 +1,6 @@
+---
+title: "Ollama"
+description: "Recurso publicado para el curso de Ollama - gestor de IA."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/ollama/)

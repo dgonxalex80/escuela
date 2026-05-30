@@ -1,0 +1,32 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/cursos/agentes.html",
+      "/cursos/arquitectura.html",
+      "/cursos/backend.html",
+      "/cursos/camino.html",
+      "/cursos/cancionero.html",
+      "/cursos/carro.html",
+      "/cursos/cocina.html",
+      "/cursos/computacion.html",
+      "/cursos/davinci.html",
+      "/cursos/docker.html",
+      "/cursos/fifa2026.html",
+      "/cursos/github.html",
+      "/cursos/LWMMM.html",
+      "/cursos/linux.html",
+      "/cursos/mmm.html",
+      "/cursos/obs.html",
+      "/cursos/ollama.html",
+      "/cursos/positron.html",
+      "/cursos/python.html",
+      "/cursos/quarto.html",
+      "/cursos/rstudio.html",
+      "/cursos/salud.html",
+      "/cursos/servidor.html",
+      "/cursos/ubuntu.html",
+      "/cursos/vscode.html"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+---
+title: "Computacion"
+description: "Recurso publicado para computacion."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/computacion/)

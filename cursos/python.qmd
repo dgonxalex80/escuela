@@ -1,0 +1,6 @@
+---
+title: "Python"
+description: "Recurso publicado para el curso de Python."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/python/)

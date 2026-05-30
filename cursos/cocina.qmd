@@ -1,0 +1,6 @@
+---
+title: "Cocina"
+description: "Recurso publicado para el curso de cocina."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/cocina/)

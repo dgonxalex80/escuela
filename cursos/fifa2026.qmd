@@ -1,0 +1,6 @@
+---
+title: "FIFA 2026"
+description: "Recurso publicado para FIFA 2026."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/fifa2026/)

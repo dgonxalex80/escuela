@@ -1,0 +1,6 @@
+---
+title: "DaVinci"
+description: "Recurso publicado para el curso de DaVinci - produccion de videos."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/davinci/)

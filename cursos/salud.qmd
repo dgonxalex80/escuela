@@ -1,0 +1,6 @@
+---
+title: "Salud"
+description: "Recurso publicado para salud."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/salud/)

@@ -1,0 +1,6 @@
+---
+title: "Ubuntu"
+description: "Recurso publicado para el curso de Ubuntu."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/ubuntu/)

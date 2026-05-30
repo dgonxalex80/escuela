@@ -1,0 +1,6 @@
+---
+title: "OBS"
+description: "Recurso publicado para el curso de OBS - generacion de videos."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/obs/)

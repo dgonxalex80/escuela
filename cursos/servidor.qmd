@@ -1,0 +1,6 @@
+---
+title: "Servidor"
+description: "Recurso publicado para el curso de servidor."
+---
+
+[Ir al curso](https://dgonxalex80.github.io/servidor/)
