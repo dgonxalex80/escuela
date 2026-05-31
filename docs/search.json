@@ -93,9 +93,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Cursos publicados",
+    "title": "Catalogo de cursos",
     "section": "",
-    "text": "GitHub Pages\n\nMateriales publicados desde repositorios y paginas verificadas de GitHub Pages.",
+    "text": "GitHub Pages\n\nExplora las paginas publicadas, filtra por tema y entra directo al material.",
     "crumbs": [
       "Inicio"
     ]
@@ -103,9 +103,9 @@
   {
     "objectID": "index.html#cursos",
     "href": "index.html#cursos",
-    "title": "Cursos publicados",
+    "title": "Catalogo de cursos",
     "section": "Cursos",
-    "text": "Cursos\n\n Ver repositorios en GitHub\n\n\nCargando paginas publicadas…",
+    "text": "Cursos\n\n\n Repositorios en GitHub\n\n\nCargando paginas publicadas…",
     "crumbs": [
       "Inicio"
     ]

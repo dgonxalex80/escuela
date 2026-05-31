@@ -1,5 +1,5 @@
 ---
-title: "Cursos publicados"
+title: "Catalogo de cursos"
 page-layout: article
 ---
 
@@ -8,17 +8,20 @@ page-layout: article
 GitHub Pages
 :::
 
-Materiales publicados desde repositorios y paginas verificadas de GitHub Pages.
+Explora las paginas publicadas, filtra por tema y entra directo al material.
 :::
 
 ## Cursos
 
+::: {.catalog-panel}
 ::: {.repo-tools}
-<input id="repo-filter" type="search" placeholder="Buscar curso" aria-label="Buscar curso">
-<a class="repo-source" href="https://github.com/dgonxalex80?tab=repositories">Ver repositorios en GitHub</a>
+<input id="repo-filter" type="search" placeholder="Buscar por titulo o palabra clave" aria-label="Buscar curso">
+<a class="repo-source" href="https://github.com/dgonxalex80?tab=repositories">Repositorios en GitHub</a>
 :::
 
 <div id="repo-status" class="repo-status">Cargando paginas publicadas...</div>
+:::
+
 <div id="repo-grid" class="course-grid" aria-live="polite"></div>
 
 <script>
