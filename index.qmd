@@ -8,85 +8,827 @@ page-layout: article
 GitHub Pages
 :::
 
-Materiales publicados y organizados en una pagina simple.
+Materiales publicados desde repositorios y paginas verificadas de GitHub Pages.
 :::
 
 ## Cursos
 
-::: {.course-grid}
-::: {.course-card}
-[Agentes](https://dgonxalex80.github.io/agentes/)
+::: {.repo-tools}
+<input id="repo-filter" type="search" placeholder="Buscar curso" aria-label="Buscar curso">
+<a class="repo-source" href="https://github.com/dgonxalex80?tab=repositories">Ver repositorios en GitHub</a>
 :::
-::: {.course-card}
-[Arquitectura](https://dgonxalex80.github.io/arquitectura/)
-:::
-::: {.course-card}
-[Backend](https://dgonxalex80.github.io/backend/)
-:::
-::: {.course-card}
-[Camino](https://dgonxalex80.github.io/camino/)
-:::
-::: {.course-card}
-[Cancionero](https://dgonxalex80.github.io/cancionero/)
-:::
-::: {.course-card}
-[Carro](https://dgonxalex80.github.io/carro/)
-:::
-::: {.course-card}
-[Cocina](https://dgonxalex80.github.io/cocina/)
-:::
-::: {.course-card}
-[Computacion](https://dgonxalex80.github.io/computacion/)
-:::
-::: {.course-card}
-[DaVinci](https://dgonxalex80.github.io/davinci/)
-:::
-::: {.course-card}
-[Docker](https://dgonxalex80.github.io/docker/)
-:::
-::: {.course-card}
-[FIFA 2026](https://dgonxalex80.github.io/fifa2026/)
-:::
-::: {.course-card}
-[GitHub](https://dgonxalex80.github.io/github/)
-:::
-::: {.course-card}
-[Linux](https://dgonxalex80.github.io/linux/)
-:::
-::: {.course-card}
-[LWMMM](https://dgonxalex80.github.io/LWMMM/)
-:::
-::: {.course-card}
-[MMM](https://dgonxalex80.github.io/mmm/)
-:::
-::: {.course-card}
-[OBS](https://dgonxalex80.github.io/obs/)
-:::
-::: {.course-card}
-[Ollama](https://dgonxalex80.github.io/ollama/)
-:::
-::: {.course-card}
-[Positron](https://dgonxalex80.github.io/positron/)
-:::
-::: {.course-card}
-[Python](https://dgonxalex80.github.io/python/)
-:::
-::: {.course-card}
-[Quarto](https://dgonxalex80.github.io/quarto/)
-:::
-::: {.course-card}
-[RStudio](https://dgonxalex80.github.io/rstudio/)
-:::
-::: {.course-card}
-[Salud](https://dgonxalex80.github.io/salud/)
-:::
-::: {.course-card}
-[Servidor](https://dgonxalex80.github.io/servidor/)
-:::
-::: {.course-card}
-[Ubuntu](https://dgonxalex80.github.io/ubuntu/)
-:::
-::: {.course-card}
-[VSCode](https://dgonxalex80.github.io/vscode/)
-:::
-:::
+
+<div id="repo-status" class="repo-status">Cargando paginas publicadas...</div>
+<div id="repo-grid" class="course-grid" aria-live="polite"></div>
+
+<script>
+const githubUser = "dgonxalex80";
+const verifiedPages = [
+  {
+    "name": "backend",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/backend/",
+    "has_pages": true
+  },
+  {
+    "name": "camino",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/camino/",
+    "has_pages": true
+  },
+  {
+    "name": "cancionero",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/cancionero/",
+    "has_pages": true
+  },
+  {
+    "name": "cocina",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/cocina/",
+    "has_pages": true
+  },
+  {
+    "name": "docker",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/docker/",
+    "has_pages": true
+  },
+  {
+    "name": "LWMMM",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/LWMMM/",
+    "has_pages": true
+  },
+  {
+    "name": "mmm",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/mmm/",
+    "has_pages": true
+  },
+  {
+    "name": "positron",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/positron/",
+    "has_pages": true
+  },
+  {
+    "name": "python",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/python/",
+    "has_pages": true
+  },
+  {
+    "name": "servidor",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/servidor/",
+    "has_pages": true
+  }
+];
+const fallbackRepos = [
+  {
+    "name": "300MAE018B",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/300MAE018B",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "ACEdEstad2021",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/ACEdEstad2021",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad1MET",
+    "description": "Actividad 1 Unidad 1 Métodos y Simulación Estadística",
+    "html_url": "https://github.com/dgonxalex80/actividad1MET",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad1MOD",
+    "description": "actividad 1 Modelos estadisticos para la toma de decisiones",
+    "html_url": "https://github.com/dgonxalex80/actividad1MOD",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad1NIV",
+    "description": "actividad1 curso nivelatorio de estadistica",
+    "html_url": "https://github.com/dgonxalex80/actividad1NIV",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad2MET",
+    "description": "Actividad unidad 2 Métodos y Simulación Estadística",
+    "html_url": "https://github.com/dgonxalex80/actividad2MET",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad2NIV",
+    "description": "actividad 2 nivelatorio de estadistica",
+    "html_url": "https://github.com/dgonxalex80/actividad2NIV",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad3MET",
+    "description": "actividad unidad 3 Metodos y simulación Estadística",
+    "html_url": "https://github.com/dgonxalex80/actividad3MET",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad4MOD",
+    "description": "actividad 4 Modelos Estadísticos para la toma de decisiones",
+    "html_url": "https://github.com/dgonxalex80/actividad4MOD",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad5MOD",
+    "description": "actividad 5 Modelos Estadísticos para la toma de decisiones",
+    "html_url": "https://github.com/dgonxalex80/actividad5MOD",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividad6MOD",
+    "description": "actividad 6 Modelos Estadísticos para la toma de decisiones ",
+    "html_url": "https://github.com/dgonxalex80/actividad6MOD",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividades1NIV",
+    "description": "actividades nivelatorio de estadistica",
+    "html_url": "https://github.com/dgonxalex80/actividades1NIV",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "actividadST11",
+    "description": "actividad 1 series de tiempo",
+    "html_url": "https://github.com/dgonxalex80/actividadST11",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "aplicaciones",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/aplicaciones",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "aulainvertida",
+    "description": "presentacion aula invertida",
+    "html_url": "https://github.com/dgonxalex80/aulainvertida",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "backend",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/backend/",
+    "has_pages": true
+  },
+  {
+    "name": "blog_PyE20222",
+    "description": "blog probabilidad y estadistica 2022-2",
+    "html_url": "https://github.com/dgonxalex80/blog_PyE20222",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "blogixa",
+    "description": "Blog IxaColombia",
+    "html_url": "https://github.com/dgonxalex80/blogixa",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "blogixa2022.io",
+    "description": "blog Ixa Colombia ",
+    "html_url": "https://github.com/dgonxalex80/blogixa2022.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "book2",
+    "description": "libro de prueba",
+    "html_url": "https://github.com/dgonxalex80/book2",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "book3",
+    "description": "book de prueba",
+    "html_url": "https://github.com/dgonxalex80/book3",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "bookPRUEBA",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/bookPRUEBA",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "camino",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/camino/",
+    "has_pages": true
+  },
+  {
+    "name": "cancionero",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/cancionero/",
+    "has_pages": true
+  },
+  {
+    "name": "carro",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/carro",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "cocina",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/cocina/",
+    "has_pages": true
+  },
+  {
+    "name": "contextoMOD",
+    "description": "contextos modelos estadisticos",
+    "html_url": "https://github.com/dgonxalex80/contextoMOD",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "curso1",
+    "description": "curso 1",
+    "html_url": "https://github.com/dgonxalex80/curso1",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "davinci",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/davinci",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "docker",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/docker/",
+    "has_pages": true
+  },
+  {
+    "name": "ejemplo1MOD",
+    "description": "Ejemplo 1 Modelos Estadisticos para la toma de decisiones",
+    "html_url": "https://github.com/dgonxalex80/ejemplo1MOD",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "escuela",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/escuela",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "escuelaR",
+    "description": "Recursos de R ",
+    "html_url": "https://github.com/dgonxalex80/escuelaR",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "fifa2026",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/fifa2026",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "futuros_soya",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/futuros_soya",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "gesciti",
+    "description": "Gerencia de Sistemas de Ciencia Tecnologia e Innovacion",
+    "html_url": "https://github.com/dgonxalex80/gesciti",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "introduccionPYE",
+    "description": "Introduccion PyE",
+    "html_url": "https://github.com/dgonxalex80/introduccionPYE",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "investiga",
+    "description": "presentacion investigacion ",
+    "html_url": "https://github.com/dgonxalex80/investiga",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "IXA",
+    "description": "documentos IXAcolombia",
+    "html_url": "https://github.com/dgonxalex80/IXA",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "juanca",
+    "description": "juanca",
+    "html_url": "https://github.com/dgonxalex80/juanca",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "LWMMM",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/LWMMM/",
+    "has_pages": true
+  },
+  {
+    "name": "metodosySIM1",
+    "description": "Metodos y simulacion estadistica - unidad 1",
+    "html_url": "https://github.com/dgonxalex80/metodosySIM1",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "metodosySIM2",
+    "description": "Unidad 2 Metodos y sumulacion estadistica",
+    "html_url": "https://github.com/dgonxalex80/metodosySIM2",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "metodosySIM3",
+    "description": "Metodos y simulacion estadistica - unidad 3",
+    "html_url": "https://github.com/dgonxalex80/metodosySIM3",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "mmm",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/mmm/",
+    "has_pages": true
+  },
+  {
+    "name": "modelosEST.io",
+    "description": "web modelo estadisticos para la toma de decisiones",
+    "html_url": "https://github.com/dgonxalex80/modelosEST.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "modelosEST1",
+    "description": "Modelos estadisticos para la toma de decisiones - unidad 1",
+    "html_url": "https://github.com/dgonxalex80/modelosEST1",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "modelosEST2",
+    "description": "Modelos estadisticos para la toma de decisiones - unidad 2",
+    "html_url": "https://github.com/dgonxalex80/modelosEST2",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "modelosEST3",
+    "description": "unidad 3 Modelos Estadisticos para la toma de decisiones",
+    "html_url": "https://github.com/dgonxalex80/modelosEST3",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "modelosEST4",
+    "description": "unidad4 ",
+    "html_url": "https://github.com/dgonxalex80/modelosEST4",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "modelosEST5",
+    "description": "unidad 2 modelos estadisticos para la toma de decisiones",
+    "html_url": "https://github.com/dgonxalex80/modelosEST5",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "modelosEST6",
+    "description": "unidad 3 modelos estadisticos para la toma de decisiones",
+    "html_url": "https://github.com/dgonxalex80/modelosEST6",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "modulo0",
+    "description": "modulo 0",
+    "html_url": "https://github.com/dgonxalex80/modulo0",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "modulo1",
+    "description": "modulo 1",
+    "html_url": "https://github.com/dgonxalex80/modulo1",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "monitorias",
+    "description": "monitorias pye",
+    "html_url": "https://github.com/dgonxalex80/monitorias",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "nivelatorioEST",
+    "description": "web curso nivelatorio",
+    "html_url": "https://github.com/dgonxalex80/nivelatorioEST",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "nivelatorioEST1",
+    "description": "Unidad1 curso nivelatorio de estadistica",
+    "html_url": "https://github.com/dgonxalex80/nivelatorioEST1",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "positron",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/positron/",
+    "has_pages": true
+  },
+  {
+    "name": "precalculo",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/precalculo",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "presentacion.io",
+    "description": "Presentacion trabajo en el cursos de Probabilidad y Estadsitica",
+    "html_url": "https://github.com/dgonxalex80/presentacion.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "presentaciones",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/presentaciones",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "probabilidad20212.io",
+    "description": "Presentaciones curso de probabilidad y estadística 20212",
+    "html_url": "https://github.com/dgonxalex80/probabilidad20212.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "Probabilidad202301",
+    "description": "Curso de PyE 202301",
+    "html_url": "https://github.com/dgonxalex80/Probabilidad202301",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "probabilidad20232",
+    "description": "web curso de probabilidad estadistica20232",
+    "html_url": "https://github.com/dgonxalex80/probabilidad20232",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "probabilidad231.io",
+    "description": "web curso de probabilidad y estadistica 202301",
+    "html_url": "https://github.com/dgonxalex80/probabilidad231.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "prueba1",
+    "description": "trabajo unidad1",
+    "html_url": "https://github.com/dgonxalex80/prueba1",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "pye20222",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/pye20222",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "python",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/python/",
+    "has_pages": true
+  },
+  {
+    "name": "recurso000",
+    "description": "pagina en blanco",
+    "html_url": "https://github.com/dgonxalex80/recurso000",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "seminario",
+    "description": "seminario ML",
+    "html_url": "https://github.com/dgonxalex80/seminario",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "seminario1",
+    "description": "seminario1",
+    "html_url": "https://github.com/dgonxalex80/seminario1",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "seminario2",
+    "description": "seminario ML",
+    "html_url": "https://github.com/dgonxalex80/seminario2",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "seriesTIE1",
+    "description": "Unidad1 curso series de tiempo",
+    "html_url": "https://github.com/dgonxalex80/seriesTIE1",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "servidor",
+    "description": "Pagina publicada verificada.",
+    "html_url": "",
+    "homepage": "https://dgonxalex80.github.io/servidor/",
+    "has_pages": true
+  },
+  {
+    "name": "sitioJC",
+    "description": "sitio de prueba",
+    "html_url": "https://github.com/dgonxalex80/sitioJC",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "sitioweb00520231.io",
+    "description": "web pye 20231",
+    "html_url": "https://github.com/dgonxalex80/sitioweb00520231.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "tablero",
+    "description": "Tablero actividad académica",
+    "html_url": "https://github.com/dgonxalex80/tablero",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "tableroML",
+    "description": "tablero ML",
+    "html_url": "https://github.com/dgonxalex80/tableroML",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "tableroSEMINARIO",
+    "description": "tablero de prueba seminario",
+    "html_url": "https://github.com/dgonxalex80/tableroSEMINARIO",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "taller101",
+    "description": "Taller 1 Probabilidad y Estadistica",
+    "html_url": "https://github.com/dgonxalex80/taller101",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "TeoriaProb202301",
+    "description": "Teoría de Probabilidades 2023-01",
+    "html_url": "https://github.com/dgonxalex80/TeoriaProb202301",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "TFoodprice",
+    "description": "Tablero Foodprice",
+    "html_url": "https://github.com/dgonxalex80/TFoodprice",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "valora",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/valora",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "web00520231.io",
+    "description": "web PyE 202301",
+    "html_url": "https://github.com/dgonxalex80/web00520231.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "web01320231.io",
+    "description": "web Teoria de Probabilidades 2023-1",
+    "html_url": "https://github.com/dgonxalex80/web01320231.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "webdgonzalez.io",
+    "description": "pagina personal de prueba",
+    "html_url": "https://github.com/dgonxalex80/webdgonzalez.io",
+    "homepage": "",
+    "has_pages": true
+  },
+  {
+    "name": "webfoodprice",
+    "description": "",
+    "html_url": "https://github.com/dgonxalex80/webfoodprice",
+    "homepage": "",
+    "has_pages": true
+  }
+];
+
+const grid = document.getElementById("repo-grid");
+const status = document.getElementById("repo-status");
+const filter = document.getElementById("repo-filter");
+let repos = [];
+
+function escapeHtml(value) {
+  return String(value || "").replace(/[&<>"\x27]/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    "\"": "&quot;",
+    "\x27": "&#39;"
+  }[char]));
+}
+
+function titleFromName(name) {
+  const special = {
+    IXA: "IXA",
+    LWMMM: "LWMMM",
+    TFoodprice: "TFoodprice",
+    mmm: "MMM",
+    obs: "OBS",
+    rstudio: "RStudio",
+    vscode: "VSCode",
+    fifa2026: "FIFA 2026",
+    github: "GitHub",
+    davinci: "DaVinci"
+  };
+  return special[name] || name.replace(/[-_]/g, " " ).replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function pageUrl(repo) {
+  if (repo.homepage && /^https?:\/\//.test(repo.homepage)) {
+    return repo.homepage;
+  }
+  if (repo.name === `${githubUser}.github.io`) {
+    return `https://${githubUser}.github.io/`;
+  }
+  return `https://${githubUser}.github.io/${encodeURIComponent(repo.name)}/`;
+}
+
+function repoUrl(repo) {
+  return repo.html_url || "";
+}
+
+function uniqueRepos(items) {
+  const byName = new Map();
+  items.forEach((repo) => byName.set(repo.name, repo));
+  return [...byName.values()].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
+}
+
+function normalizeSearch(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[-_.]/g, " " )
+    .toLowerCase()
+    .trim();
+}
+
+function searchParts(value) {
+  return normalizeSearch(value).split(/\s+/).filter(Boolean);
+}
+
+function repoSearchText(repo) {
+  return normalizeSearch(`${titleFromName(repo.name)} ${repo.name} ${repo.description || ""}`);
+}
+
+function renderRepos(items) {
+  const parts = searchParts(filter.value);
+  const visible = items.filter((repo) => {
+    const haystack = repoSearchText(repo);
+    return parts.every((part) => haystack.includes(part));
+  });
+
+  grid.innerHTML = visible.map((repo) => {
+    const title = escapeHtml(titleFromName(repo.name));
+    const description = repo.description ? `<p>${escapeHtml(repo.description)}</p>` : "";
+    const repoLink = repoUrl(repo) ? `<a href="${repoUrl(repo)}">Repositorio</a>` : "";
+    return `
+      <article class="course-card">
+        <h3>${title}</h3>
+        ${description}
+        <div class="course-actions">
+          <a href="${pageUrl(repo)}">Ver pagina</a>
+          ${repoLink}
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  status.textContent = visible.length === 1
+    ? "1 pagina publicada disponible."
+    : `${visible.length} paginas publicadas disponibles.`;
+}
+
+async function loadRepos() {
+  try {
+    const data = [];
+    for (let page = 1; page <= 10; page += 1) {
+      const response = await fetch(`https://api.github.com/users/${githubUser}/repos?per_page=100&page=${page}`);
+      if (!response.ok) {
+        throw new Error("GitHub no respondio correctamente");
+      }
+      const batch = await response.json();
+      data.push(...batch);
+      if (batch.length < 100) {
+        break;
+      }
+    }
+    repos = uniqueRepos([
+      ...data.filter((repo) => !repo.fork && repo.has_pages),
+      ...verifiedPages
+    ]);
+    renderRepos(repos);
+  } catch (error) {
+    repos = fallbackRepos;
+    renderRepos(repos);
+    status.textContent = "No se pudo cargar GitHub en vivo. Mostrando la lista revisada de paginas publicadas.";
+  }
+}
+
+filter.addEventListener("input", () => renderRepos(repos));
+loadRepos();
+</script>

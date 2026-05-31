@@ -77,7 +77,43 @@ h1 {
   background: var(--brand-soft);
 }
 
-/* Grilla de enlaces directos */
+/* Grilla de repositorios */
+.repo-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.repo-tools p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
+}
+
+.repo-tools input {
+  width: min(100%, 24rem);
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-strong);
+  color: var(--text);
+}
+
+.repo-source {
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.repo-status {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
 .course-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -85,26 +121,54 @@ h1 {
   margin-top: 1rem;
 }
 
-.course-card a {
-  display: block;
-  min-height: 4rem;
+.course-card {
+  min-height: 9rem;
   padding: 1rem 1.1rem;
   border: 1px solid var(--line);
   border-radius: 20px;
   background: var(--surface);
   box-shadow: var(--shadow);
-  color: inherit;
-  font-size: 1.15rem;
-  font-weight: 700;
-  line-height: 1.2;
-  text-decoration: none;
   transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
 }
 
-.course-card a:hover {
+.course-card:hover {
   transform: translateY(-3px) rotate(-0.2deg);
   background: var(--surface-strong);
   border-color: rgba(255, 138, 91, 0.45);
+}
+
+.course-card h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.course-card p {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.course-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
+.course-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.course-actions a:hover {
   text-decoration: underline;
   text-underline-offset: 0.12em;
 }
@@ -112,6 +176,20 @@ h1 {
 @media (max-width: 640px) {
   .content {
     padding-top: 2.1rem;
+  }
+
+  .repo-tools {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .repo-tools p {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .repo-source {
+    white-space: normal;
   }
 
   .course-grid {
